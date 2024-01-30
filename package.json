@@ -1,0 +1,24 @@
+{
+  "name": "squid-stflip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "contracts:compile": "typechain --target=ethers-v6 abis/*.json --out-dir abis/types"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@typechain/ethers-v6": "^0.5.1",
+    "ethers": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.0",
+    "ts-node": "^9.0.0",
+    "typechain": "^8.3.2",
+    "typescript": "^4.0.0"
+  }
+}
